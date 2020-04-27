@@ -55,14 +55,25 @@ img {
 /*BANNER*/
 
 .welcome-container{
-    background-image: url('../img/banner-inicio.jpg');
-    width: 100%;
+    /* background-image: url('../img/banner-inicio.jpg');
+    background-clip: border-box; */
+    background-color: black;
+    max-width: 100%;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    position: relative;
 }
+
+.welcome-container .img-banner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
 
 .welcome-container span{
     width: 100%;
@@ -71,6 +82,7 @@ img {
     color: white;
     text-transform: uppercase;
     margin: 15px 0;
+    z-index: 1;
 }
 
 
@@ -79,12 +91,13 @@ img {
     display: flex;
     justify-content: center;
     margin: 15px 0;
+    z-index: 1;
 }
 
 .welcome-container .welcome{
     background-color: rgba(255, 255, 255, .5);
     width: fit-content;
-    
+    z-index: 1;
     
 }
 
@@ -103,6 +116,7 @@ img {
     margin: 15px 0;
     color: white;
     transition: background-color 1s ease;
+    z-index: 1;
 }
 
 .welcome-container .show a{
@@ -142,5 +156,54 @@ img {
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+/*Sobre Nosotros*/
+
+.about-us-container{
+    padding: 70px 50px;
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+    border:1px solid black;
+
+}
+
+.about-us-container .img-about-us{
+    width: 50%;
+    
+    margin-right: 20px;
+}
+
+.about-us-container .about-us{
+    width: 50%;
+}
+
+ .about-us-container .about-us h3{
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+} 
+
+.about-us-container .about-us h3:nth-child(3){
+    color: rgb(100, 182, 248);
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.about-us-container .about-us h4{
+    font-size: .8em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+} 
+
+.about-us-container .about-us p{
+    line-height: 23px;
+} 
+
+.about-us-container .about-us a{
+    color: rgb(100, 182, 248);
 }
 
