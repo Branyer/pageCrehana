@@ -207,3 +207,37 @@ img {
     color: rgb(100, 182, 248);
 }
 
+/*FOOTER*/
+
+.footer{
+    background-color:rgb(21, 74, 109);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.footer .block{
+    width: 20%;
+}
+
+.footer .block h3{
+    text-transform: uppercase;
+    color: rgb(158, 151, 151);
+    text-align: center;
+    font-weight: normal;
+}
+
+
+.footer .block p{
+    margin-top: 40px;
+    color: rgb(158, 151, 151);
+    text-align: center;
+}
+
+.footer>p{
+    margin: 20px;
+    width: 100%;
+    text-align: center;
+    color: rgb(158, 151, 151);
+}
