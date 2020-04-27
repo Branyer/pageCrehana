@@ -241,3 +241,60 @@ img {
     text-align: center;
     color: rgb(158, 151, 151);
 }
+
+/*MEDIA QUERIES*/
+
+@media all and (max-width:800px){
+    .about-us-container{
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: fit-content;
+    }
+
+    .about-us-container .img-about-us{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .about-us-container .about-us{
+        width: 100%;
+    }
+
+    .footer .block{
+        width: 40%;
+       
+    }
+
+}
+
+@media all and (max-width:512px){
+    .footer .block{
+        width: 100%;
+        margin: 30px;
+    }
+ 
+    body{
+        font-size: 12px;
+    }
+
+    .header{
+        height: fit-content;
+    }
+
+    .header .nav ul{
+        flex-wrap: wrap;
+    }
+
+    .header .nav ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .welcome-container{
+        /* background-image: url('../img/banner-inicio.jpg');
+        background-clip: border-box; */
+       display: none;
+        
+    
+    }
+}
