@@ -1,0 +1,54 @@
+/*Estilos generale*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Header*/
+
+.header {
+    background-color:rgb(252, 245, 245);
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.header .img-logo{
+    height: 100px ;
+    padding-top: 25px;
+}
+
+.header .nav {
+    width: 100%;
+}
+
+.header .nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header .nav ul li{
+    margin: 20px 20px;
+}
+
+.header .nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(155, 153, 153);
+}
+
+.header .nav ul li a:hover{
+    color: rgb(102, 64, 64);
+}
+
+
+/*MAIN*/
+
+
